@@ -11,10 +11,10 @@
 
 ENCODER_SPI_Signal_Typedef	encoder_spi;
 
-	uint16_t data_t[2];
-	uint16_t data_r[2];
+static	uint16_t data_t[2];
+static	uint16_t data_r[2];
 
-uint8_t SPI_TransmitReceive(SPI_HandleTypeDef * hspi, uint16_t TxData, uint16_t *RxData)            
+static uint8_t SPI_TransmitReceive(SPI_HandleTypeDef * hspi, uint16_t TxData, uint16_t *RxData)
 {
   volatile uint32_t cnt = 0;
     
