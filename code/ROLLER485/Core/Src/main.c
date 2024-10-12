@@ -47,8 +47,9 @@
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
 #define I2C_ADDRESS 0x64
-#define FIRMWARE_VERSION 1
-#define APPLICATION_ADDRESS     ((uint32_t)0x08002000)
+#define FIRMWARE_VERSION 0x56	// @GOROman
+//#define APPLICATION_ADDRESS     ((uint32_t)0x08002000)
+#define APPLICATION_ADDRESS     ((uint32_t)0x08000000)
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -1070,7 +1071,7 @@ void Slave_Complete_Callback(uint8_t *rx_data, uint16_t len)
 int main(void)
 {
   /* USER CODE BEGIN 1 */
-  IAP_Set();
+//  IAP_Set();
   /* USER CODE END 1 */
 
   /* MCU Configuration--------------------------------------------------------*/
