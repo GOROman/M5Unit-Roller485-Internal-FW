@@ -1136,16 +1136,6 @@ __weak void I2C1_EV_IRQHandler(void)
 /**
   * @brief This function handles I2C1 error interrupt.
   */
-__weak void I2C1_ER_IRQHandler(void)
-{
-  /* USER CODE BEGIN I2C1_ER_IRQn 0 */
-
-  /* USER CODE END I2C1_ER_IRQn 0 */
-
-  /* USER CODE BEGIN I2C1_ER_IRQn 1 */
-
-  /* USER CODE END I2C1_ER_IRQn 1 */
-}
 
 /**
   * @brief This function handles USART3 global interrupt / USART3 wake-up interrupt through EXTI line 28.
